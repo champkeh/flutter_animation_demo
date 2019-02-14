@@ -5,21 +5,21 @@ class StaggerAnimation extends StatelessWidget {
   StaggerAnimation({Key key, this.controller}) : super(key:key) {
     height = Tween<double>(begin: 0, end: 300).animate(CurvedAnimation(
         parent: controller,
-        curve: Interval(0.0, 0.6, curve: Curves.easeOut),
-        reverseCurve: Interval(0.0, 0.6, curve: Curves.easeIn)));
+        curve: Interval(0.0, 0.5, curve: Curves.easeOut),
+        reverseCurve: Interval(0.0, 0.5, curve: Curves.easeIn)));
 
     ColorTween colorTween1 = ColorTween(begin: Colors.red, end: Colors.green);
     ColorTween colorTween2 = ColorTween(begin: Colors.green, end: Colors.blue);
     color = TweenSequence([
-      TweenSequenceItem(tween: colorTween1, weight: 60),
-      TweenSequenceItem(tween: colorTween2, weight: 40),
+      TweenSequenceItem(tween: colorTween1, weight: 50),
+      TweenSequenceItem(tween: colorTween2, weight: 50),
     ]).animate(controller);
 
     padding = Tween<EdgeInsets>(
       begin: EdgeInsets.only(left: .0),
       end: EdgeInsets.only(left: 250.0),
     )
-        .chain(CurveTween(curve: Interval(0.6, 1.0, curve: Curves.ease)))
+        .chain(CurveTween(curve: Interval(0.5, 1.0, curve: Curves.ease)))
         .animate(controller);
   }
 
