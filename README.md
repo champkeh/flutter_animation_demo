@@ -11,5 +11,9 @@
 ## Animation示例
 
 ### StaggerAnimation
-![stagger animation](assets/screenshot/stagger_animation_1.gif)
-![stagger animation](assets/screenshot/stagger_animation_2.gif)
+<table>
+  <tr>
+    <td><img src="/assets/screenshot/stagger_animation_1.gif" /></td>
+    <td><img src="/assets/screenshot/stagger_animation_2.gif" /></td>
+  </tr>
+</table>
