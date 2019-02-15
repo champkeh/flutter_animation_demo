@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 
 /// 交错动画案例
 class StaggerAnimation extends StatelessWidget {
+
   StaggerAnimation({Key key, this.controller}) : super(key:key) {
+    // height animation (from 0 to 300 duration 50%)
     height = Tween<double>(begin: 0, end: 300).animate(CurvedAnimation(
         parent: controller,
         curve: Interval(0.0, 0.5, curve: Curves.easeOut),
         reverseCurve: Interval(0.0, 0.5, curve: Curves.easeIn)));
 
+    // color animation
     ColorTween colorTween1 = ColorTween(begin: Colors.red, end: Colors.green);
     ColorTween colorTween2 = ColorTween(begin: Colors.green, end: Colors.blue);
     color = TweenSequence([
@@ -15,6 +18,7 @@ class StaggerAnimation extends StatelessWidget {
       TweenSequenceItem(tween: colorTween2, weight: 50),
     ]).animate(controller);
 
+    // padding animation
     padding = Tween<EdgeInsets>(
       begin: EdgeInsets.only(left: .0),
       end: EdgeInsets.only(left: 250.0),
@@ -68,6 +72,7 @@ class _StaggerRouteState extends State<StaggerRoute>
 
   Future<Null> _playAnimation() async {
     try {
+      // first forward play and then reverse play
       await _controller.forward().orCancel;
       await _controller.reverse().orCancel;
     } on TickerCanceled {}
