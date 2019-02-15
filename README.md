@@ -74,3 +74,4 @@ class StaggerAnimation extends StatelessWidget {
   </tr>
 </table>
 
+这个动画主要用到了`AnimatedList`这个系统提供的widget
