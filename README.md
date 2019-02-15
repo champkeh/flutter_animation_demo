@@ -74,4 +74,5 @@ class StaggerAnimation extends StatelessWidget {
   </tr>
 </table>
 
-这个动画主要用到了`AnimatedList`这个系统提供的widget
+>这个动画主要用到了`AnimatedList`这个系统提供的widget
+>[文章链接](https://flutter.io/docs/catalog/samples/animated-list)
