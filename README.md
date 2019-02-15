@@ -66,3 +66,11 @@ class StaggerAnimation extends StatelessWidget {
   }
 }
 ```
+
+### AnimatedList
+<table>
+  <tr>
+    <td><img src="/assets/screenshot/animated_list_animation_1.gif" /></td>
+  </tr>
+</table>
+
