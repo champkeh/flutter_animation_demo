@@ -26,7 +26,10 @@ class _AnimatedListRouteState extends State<AnimatedListRoute> {
 
   // Used to build list items that haven't been removed.
   Widget _buildItem(
-      BuildContext context, int index, Animation<double> animation) {
+    BuildContext context,
+    int index,
+    Animation<double> animation,
+  ) {
     return CardItem(
       animation: animation,
       item: _list[index],
@@ -45,7 +48,10 @@ class _AnimatedListRouteState extends State<AnimatedListRoute> {
   // The widget will be used by the [AnimatedListState.removeItem] method's
   // [AnimatedListRemovedItemBuilder] parameter.
   Widget _buildRemovedItem(
-      int item, BuildContext context, Animation<double> animation) {
+    int item,
+    BuildContext context,
+    Animation<double> animation,
+  ) {
     return CardItem(
       animation: animation,
       item: item,

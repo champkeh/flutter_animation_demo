@@ -6,7 +6,9 @@
 ## Animation相关教程
 1. [官方文档中的动画介绍](https://flutter.io/docs/development/ui/animations)
 2. [《Flutter实战》电子书中的动画章节](https://book.flutterchina.club/chapter9/)
-
+3. [medium文章: Slidable:A Flutter story](https://medium.com/flutter-community/slidable-a-flutter-story-f4a5f55f6a96)
+4. [medium文章: How I replicated the iOS sliding row animation in Flutter](https://medium.com/flutter-community/how-i-replicated-the-ios-row-animation-in-flutter-81dfe9b60040)
+5. [medium文章: Create simple animations for your articles with Flutter](https://medium.com/flutter-community/create-simple-animations-for-your-articles-with-flutter-7769085108d1)
 
 ## Animation示例
 
